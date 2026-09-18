@@ -1,0 +1,32 @@
+// src/components/Navbar.tsx
+import Link from "next/link";
+
+export default function Navbar() {
+  return (
+    <nav className="navbar" aria-label="เมนูหลัก">
+      <ul className="navList">
+        <li>
+          <Link className="navLink" href="/">
+            หน้าแรก
+          </Link>
+        </li>
+        <li>
+          <Link className="navLink" href="/courses">
+            รายวิชา
+          </Link>
+        </li>
+        {/* เพิ่มหน้าจัดการเกมตรงนี้ */}
+        <li>
+          <Link className="navLink" href="/games">
+            จัดการเกม
+          </Link>
+        </li>
+        <li>
+          <Link className="navLink" href="/about">
+            เกี่ยวกับ
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+}
